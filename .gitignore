@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+ai_cache.json
+user_activity.json
+config.py  # Исключаем конфиг с токенами!

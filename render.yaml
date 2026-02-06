@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: buhbot
+    env: python
+    pythonVersion: "3.11.0"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        value: ваш_токен_здесь
+      - key: ADMIN_ID
+        value: ваш_id_здесь
+      - key: YANDEX_API_KEY
+        value: test
+      - key: YANDEX_FOLDER_ID
+        value: test
